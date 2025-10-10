@@ -1,0 +1,40 @@
+.top-bar {
+  background-color: #1f2937;
+  color: white;
+  padding: 8px 0;
+  font-size: 0.875rem;
+}
+
+.top-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.top-bar-left,
+.top-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.top-bar a:hover {
+  color: #60a5fa;
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    font-size: 0.75rem;
+  }
+  
+  .top-bar-left,
+  .top-bar-right {
+    gap: 10px;
+  }
+  
+  .top-bar-left span:last-child {
+    display: none;
+  }
+}

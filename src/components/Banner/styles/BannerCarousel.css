@@ -1,0 +1,31 @@
+
+.banner-carousel {
+  width: 100%;
+  max-width: 1200px;  
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.banner-image {
+  width: 100%;     
+  height: auto;       
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+.banner-carousel,
+.banner-image {
+  aspect-ratio: 16 / 9;
+}
+@media (max-width: 768px) {
+    .banner-carousel {
+        width: 70%;
+        margin: 0;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .banner-image {
+        border-radius: 8px;
+    }
+}

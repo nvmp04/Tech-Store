@@ -1,0 +1,33 @@
+.home-banner-section {
+  display: flex;
+  padding: 30px 0;
+}
+.banner-layout{
+  display: flex;
+  max-width: 1200px;
+}
+.banner-left {
+  width: 300px; 
+  min-width: 100px;
+}
+
+
+.banner-right {
+  border-radius: 10px;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .home-banner-section {
+    padding: 0;
+  }
+  .banner-layout{
+    display: flex;
+    max-width: 768px;
+  }
+  .banner-image {
+      border-radius: 8px;
+  }
+  .banner-left {
+    flex: 0; 
+  }
+}

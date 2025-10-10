@@ -1,0 +1,144 @@
+.header {
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 15px 0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.logo h1 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #1a56db;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  display: block;
+  font-size: 0.75rem;
+  color: #6b7280;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.search-bar {
+  flex: 1;
+  max-width: 600px;
+  display: flex;
+  position: relative;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 2px solid #e5e7eb;
+  font-size: 0.95rem;
+}
+
+.search-bar input:focus {
+  border-color: #1a56db;
+}
+
+.search-bar button {
+  padding: 12px 24px;
+  background-color: #1a56db;
+  color: white;
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.5px;
+}
+
+.search-bar button:hover {
+  background-color: #1447b8;
+}
+
+.header-actions {
+  display: flex;
+  gap: 20px;
+}
+
+.header-action {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.header-action:hover {
+  background-color: #f3f4f6;
+}
+
+.header-action .icon {
+  font-size: 1.5rem;
+}
+
+.action-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.action-text small {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.action-text strong {
+  font-size: 0.875rem;
+  color: #111827;
+}
+
+.badge {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background-color: #ef4444;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  min-width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .search-bar {
+    max-width: 400px;
+  }
+  
+  .action-text {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+  
+  .search-bar {
+    order: 3;
+    max-width: 100%;
+    width: 100%;
+  }
+}
