@@ -22,7 +22,7 @@ export default function FilterBar({ onFilterChange }) {
       case "macbook":
         return {
           title: "MacBook",
-          brands: [], // ẩn vì chỉ có Apple
+          brands: [], 
           cpu: ["M1", "M2", "M3"],
           storage: ["256GB", "512GB", "1TB", "2TB"],
           price: true,
