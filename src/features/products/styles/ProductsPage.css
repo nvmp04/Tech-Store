@@ -1,0 +1,25 @@
+.products-page {
+  padding: 40px 0;
+}
+
+.products-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.sort-dropdown select {
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.sort-dropdown label {
+  margin-right: 10px;
+  font-weight: 600;
+  color: #333;
+}

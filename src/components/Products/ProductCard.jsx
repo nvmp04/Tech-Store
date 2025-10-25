@@ -1,8 +1,10 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 
 const formatPrice = (price) => new Intl.NumberFormat('vi-VN').format(price) + '₫';
 
-const ProductCard = ({ product, setCart }) => (
+function ProductCard({ product, setCart }){
+
+  return(
   <div className="product-card">
     {product.badge && <span className={`product-badge ${product.badge.toLowerCase()}`}>{product.badge}</span>}
     {product.discount > 0 && <span className="discount-badge">-{product.discount}%</span>}
@@ -10,7 +12,7 @@ const ProductCard = ({ product, setCart }) => (
     <div className="product-image">
       <img src={product.image} alt={product.name} />
       <div className="product-overlay">
-        <button className="btn-quick-view">XEM NHANH</button>
+        <Link to={'/product/' + product.id} className="btn-quick-view">XEM SẢN PHẨM</Link>
       </div>
     </div>
 
@@ -42,6 +44,7 @@ const ProductCard = ({ product, setCart }) => (
       </button>
     </div>
   </div>
-);
+  )
+};
 
 export default ProductCard;
