@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/ProductDetailPage.css'; 
+import { useNavigate } from 'react-router-dom';
 
 const ProductDetailPage = () => {
   const [activeTab, setActiveTab] = useState('description');
@@ -8,7 +9,7 @@ const ProductDetailPage = () => {
   const [rating, setRating] = useState(0);
   const [hoverRating, setHoverRating] = useState(0);
   const [reviewText, setReviewText] = useState('');
-
+  const navigate = useNavigate();
   const product = {
     id: 1,
     name: 'Dell XPS 13 9310 - Intel Core i7-1165G7',
@@ -160,7 +161,7 @@ const ProductDetailPage = () => {
 
             <div className="actions">
               <button className="btn-add-cart">THÊM VÀO GIỎ HÀNG</button>
-              <button className="btn-buy-now">MUA NGAY</button>
+              <button onClick={()=>navigate('/checkout')} className="btn-buy-now">MUA NGAY</button>
             </div>
           </div>
         </div>

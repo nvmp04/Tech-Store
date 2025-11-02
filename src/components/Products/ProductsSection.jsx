@@ -92,14 +92,7 @@ const ProductsSection = ({ setCart }) => {
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">SẢN PHẨM NỔI BẬT</h2>
-          <div className="filter-tabs">
-            <button className="tab active">TẤT CẢ</button>
-            <button className="tab">LAPTOP GAMING</button>
-            <button className="tab">MACBOOK</button>
-            <button className="tab">VĂN PHÒNG</button>
-          </div>
         </div>
-
         <div className="grid grid-4">
           {products.map(p => (
             <ProductCard key={p.id} product={p} setCart={setCart} />

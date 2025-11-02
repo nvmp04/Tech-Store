@@ -7,7 +7,6 @@ import "../styles/ProductsPage.css";
 export default function ProductsPage() {
   const { category } = useParams();
 
-  // ✅ Bộ lọc mặc định
   const [filters, setFilters] = useState({
     priceRange: "all",
     brand: "",

@@ -4,6 +4,7 @@ import NavMenu from './NavMenu';
 import './styles/Header.css'
 import { PiPhone} from 'react-icons/pi';
 import { FaShoppingCart } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 const Header = ({ cart }) => {
   return (
     <>
@@ -29,14 +30,14 @@ const Header = ({ cart }) => {
                   <strong>0909.123.456</strong>
                 </div>
               </div>
-              <div className="header-action">
+              <Link to="/cart" className="header-action">
                 
                 <div className="action-text">
                   <FaShoppingCart className='category-icon' />
                   <strong>{cart} sản phẩm</strong>
                 </div>
                 {cart > 0 && <span className="badge">{cart}</span>}
-              </div>
+              </Link>
             </div>
           </div>
         </div>
